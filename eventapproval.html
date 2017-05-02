@@ -1,0 +1,109 @@
+<html>
+<head>
+	
+
+	<link rel="shortcut icon" type="image/x-icon" href="static1/pics/favicon.ico" />
+	<title>
+		Event Name
+	</title>
+</head>
+
+<!--Initialising css folders-->
+<link rel="stylesheet" href="static1/css/materialize.min.css">
+
+<!--Initialising javascript folders-->
+<script type="text/javascript" src="static1/js/jquery-2.1.1.min.js"></script>
+<script src="static1/js/register.js"></script>
+<script src="static1/js/materialize.min.1.js"></script>
+<script src="static1/js/materialize.min.js"></script>
+<script src="static1/js/jquery.knob.js"></script>
+<script src="static1/js/jquery.ccountdown.js"></script>
+<script src="static1/js/init.min.js"></script>
+
+<style>
+.nt:hover{
+background-color:#e6b707;
+color:#000000;
+}
+</style>
+<!--Initialising icon font-->
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static1/css/icomonn.css">
+
+<!--Initialisations end-->
+<body>
+<div id="basic_reg" class="col s12">
+	<h1 align="center"> Event Application Form</h1>
+	<form autocomplete="off" id="form" method="post" action="approval.php">
+	
+	<div class="modal-content center black-text" style="position:relative;;">
+		<div class="row">
+				<div class="input-field col s8 offset-s2" style="margin-top:60">
+					<input type="text" id="eventname" name="eventname" class="validate black-text" >
+					<label for="eventname">Event Name</label>
+				</div>
+				<div class="input-field col s8 offset-s2">
+					<textarea id="description" name="description" class="materialize-textarea black-text"></textarea>
+					<label for="description">Description</label>
+				</div>
+				<div class="input-field col s8 offset-s2">
+					<input type="date" id="eventdate" name="eventdate" class="datepicker validate black-text" >
+					<label for="eventdate">Date of Event</label>
+				</div>
+				
+				
+				<script>
+				$('.datepicker').pickadate({
+					selectMonths: true, // Creates a dropdown to control month
+					selectYears: 120 // Creates a dropdown of 15 years to control year
+				});
+				</script>
+				<div class="input-field col s8 offset-s2">
+					<input type="text" id="venue" name="venue" class="validate black-text" >
+					<label for="venue">Room Requirements</label>
+				</div>
+				<div class="input-field col s8 offset-s2">
+					<input type="number" id="int_participants" name="int_participants" class="validate black-text" >
+					<label for="int_participants">Expected  Internal Participants</label>
+				</div>
+				<div class="input-field col s8 offset-s2">
+					<input type="number" id="ext_participants" name="ext_participants" class="validate black-text" >
+					<label for="ext_participants">Expected  External Participants</label>
+				</div>
+				<div class="input-field col s8 offset-s2">
+					<input type="number" id="sponsorship" name="sponsorship" class="validate black-text" >
+					<label for="sponsorship">Sponsorship</label>
+				</div>
+				<div class="input-field col s8 offset-s2">
+					<textarea id="budget" name="budget" class="materialize-textarea black-text"></textarea>
+					<label for="budget">Budget</label>
+				</div>
+				<div class="input-field col s8 offset-s2">
+					<input type="number" id="mob" name="mob" class="validate black-text" >
+					<label for="mob">Mobile Number:</label>
+				</div>
+				<div class="input-field col s8 offset-s2">
+					<input type="text" id="email" name="email" class="validate black-text" >
+					<label for="email">Email ID</label>
+				</div>
+				<div class="input-field col s8 offset-s2">
+					<input type="submit" value="Submit" id="submit" name="submit" class="validate black-text" >
+					
+				</div>
+				
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
